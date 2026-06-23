@@ -1,0 +1,908 @@
+[
+    {
+        "id": 1,
+        "cliente": "jesus rivera",
+        "mesa1": {
+            "numero": 1,
+            "capacidad": 2,
+            "ocupada": true
+        },
+        "mesa2": null,
+        "platos": [
+            {
+                "nombre": "Jugo Natural de Frutilla (500ml)",
+                "receta": [
+                    {
+                        "ingrediente": "Insumo Jugo Frutilla",
+                        "cantidad": 1
+                    }
+                ],
+                "margen_ganancia": 3.11,
+                "disponible": true,
+                "nota": ""
+            }
+        ],
+        "estado": "cerrado",
+        "nota": "",
+        "fechaCreacion": "21/06/2026",
+        "boleta": {
+            "total": 2799,
+            "tipoPago": "tarjeta",
+            "propina": 450000,
+            "divisiones": []
+        }
+    },
+    {
+        "id": 2,
+        "cliente": "jesus rivera",
+        "mesa1": {
+            "numero": 1,
+            "capacidad": 2,
+            "ocupada": true
+        },
+        "mesa2": null,
+        "platos": [
+            {
+                "nombre": "Pastel de Choclo",
+                "receta": [
+                    {
+                        "ingrediente": "Choclo Desgranado (100g)",
+                        "cantidad": 4
+                    },
+                    {
+                        "ingrediente": "Pino de Carne (100g)",
+                        "cantidad": 2
+                    },
+                    {
+                        "ingrediente": "Pollo (Tuto)",
+                        "cantidad": 1
+                    },
+                    {
+                        "ingrediente": "Huevo Duro unidad",
+                        "cantidad": 1
+                    }
+                ],
+                "margen_ganancia": 1.95,
+                "disponible": true,
+                "nota": ""
+            }
+        ],
+        "estado": "cerrado",
+        "nota": "",
+        "fechaCreacion": "21/06/2026",
+        "boleta": {
+            "total": 8677,
+            "tipoPago": "tarjeta",
+            "propina": 850000,
+            "divisiones": []
+        }
+    },
+    {
+        "id": 3,
+        "cliente": "jesus rivera",
+        "mesa1": {
+            "numero": 1,
+            "capacidad": 2,
+            "ocupada": true
+        },
+        "mesa2": null,
+        "platos": [
+            {
+                "nombre": "Pastel de Choclo",
+                "receta": [
+                    {
+                        "ingrediente": "Choclo Desgranado (100g)",
+                        "cantidad": 4
+                    },
+                    {
+                        "ingrediente": "Pino de Carne (100g)",
+                        "cantidad": 2
+                    },
+                    {
+                        "ingrediente": "Pollo (Tuto)",
+                        "cantidad": 1
+                    },
+                    {
+                        "ingrediente": "Huevo Duro unidad",
+                        "cantidad": 1
+                    }
+                ],
+                "margen_ganancia": 1.95,
+                "disponible": true,
+                "nota": ""
+            }
+        ],
+        "estado": "cerrado",
+        "nota": "",
+        "fechaCreacion": "21/06/2026",
+        "boleta": {
+            "total": 8677,
+            "tipoPago": "tarjeta",
+            "propina": 867,
+            "divisiones": [
+                {
+                    "monto": 9544,
+                    "tipoPago": "tarjeta"
+                }
+            ]
+        }
+    },
+    {
+        "id": 4,
+        "cliente": "jesus rivera",
+        "mesa1": {
+            "numero": 1,
+            "capacidad": 2,
+            "ocupada": true
+        },
+        "mesa2": null,
+        "platos": [
+            {
+                "nombre": "Pastel de Choclo",
+                "receta": [
+                    {
+                        "ingrediente": "Choclo Desgranado (100g)",
+                        "cantidad": 4
+                    },
+                    {
+                        "ingrediente": "Pino de Carne (100g)",
+                        "cantidad": 2
+                    },
+                    {
+                        "ingrediente": "Pollo (Tuto)",
+                        "cantidad": 1
+                    },
+                    {
+                        "ingrediente": "Huevo Duro unidad",
+                        "cantidad": 1
+                    }
+                ],
+                "margen_ganancia": 1.95,
+                "disponible": true,
+                "nota": ""
+            }
+        ],
+        "estado": "cerrado",
+        "nota": "",
+        "fechaCreacion": "21/06/2026",
+        "boleta": {
+            "total": 8677,
+            "tipoPago": "efectivo",
+            "propina": 867,
+            "divisiones": [
+                {
+                    "monto": 9544,
+                    "tipoPago": "efectivo"
+                }
+            ]
+        }
+    },
+    {
+        "id": 5,
+        "cliente": "jesus rivera",
+        "mesa1": {
+            "numero": 2,
+            "capacidad": 4,
+            "ocupada": true
+        },
+        "mesa2": null,
+        "platos": [
+            {
+                "nombre": "Pastel de Choclo",
+                "receta": [
+                    {
+                        "ingrediente": "Choclo Desgranado (100g)",
+                        "cantidad": 4
+                    },
+                    {
+                        "ingrediente": "Pino de Carne (100g)",
+                        "cantidad": 2
+                    },
+                    {
+                        "ingrediente": "Pollo (Tuto)",
+                        "cantidad": 1
+                    },
+                    {
+                        "ingrediente": "Huevo Duro unidad",
+                        "cantidad": 1
+                    }
+                ],
+                "margen_ganancia": 1.95,
+                "disponible": true,
+                "nota": ""
+            }
+        ],
+        "estado": "cerrado",
+        "nota": "",
+        "fechaCreacion": "21/06/2026",
+        "boleta": {
+            "total": 8677,
+            "tipoPago": "efectivo",
+            "propina": 867,
+            "divisiones": [
+                {
+                    "monto": 9544,
+                    "tipoPago": "efectivo"
+                }
+            ]
+        }
+    },
+    {
+        "id": 6,
+        "cliente": "jesus rivera",
+        "mesa1": {
+            "numero": 1,
+            "capacidad": 2,
+            "ocupada": true
+        },
+        "mesa2": null,
+        "platos": [
+            {
+                "nombre": "Pastel de Choclo",
+                "receta": [
+                    {
+                        "ingrediente": "Choclo Desgranado (100g)",
+                        "cantidad": 4
+                    },
+                    {
+                        "ingrediente": "Pino de Carne (100g)",
+                        "cantidad": 2
+                    },
+                    {
+                        "ingrediente": "Pollo (Tuto)",
+                        "cantidad": 1
+                    },
+                    {
+                        "ingrediente": "Huevo Duro unidad",
+                        "cantidad": 1
+                    }
+                ],
+                "margen_ganancia": 1.95,
+                "disponible": true,
+                "nota": ""
+            }
+        ],
+        "estado": "cerrado",
+        "nota": "",
+        "fechaCreacion": "21/06/2026",
+        "boleta": {
+            "total": 8677,
+            "tipoPago": "tarjeta",
+            "propina": 450000,
+            "divisiones": []
+        }
+    },
+    {
+        "id": 7,
+        "cliente": "jesus rivera",
+        "mesa1": {
+            "numero": 2,
+            "capacidad": 4,
+            "ocupada": true
+        },
+        "mesa2": null,
+        "platos": [
+            {
+                "nombre": "Pastel de Choclo",
+                "receta": [
+                    {
+                        "ingrediente": "Choclo Desgranado (100g)",
+                        "cantidad": 4
+                    },
+                    {
+                        "ingrediente": "Pino de Carne (100g)",
+                        "cantidad": 2
+                    },
+                    {
+                        "ingrediente": "Pollo (Tuto)",
+                        "cantidad": 1
+                    },
+                    {
+                        "ingrediente": "Huevo Duro unidad",
+                        "cantidad": 1
+                    }
+                ],
+                "margen_ganancia": 1.95,
+                "disponible": true,
+                "nota": ""
+            }
+        ],
+        "estado": "cerrado",
+        "nota": "",
+        "fechaCreacion": "21/06/2026",
+        "boleta": {
+            "total": 8677,
+            "tipoPago": "tarjeta",
+            "propina": 4500000,
+            "divisiones": []
+        }
+    },
+    {
+        "id": 8,
+        "cliente": "jesus rivera",
+        "mesa1": {
+            "numero": 1,
+            "capacidad": 2,
+            "ocupada": true
+        },
+        "mesa2": null,
+        "platos": [
+            {
+                "nombre": "Pastel de Choclo",
+                "receta": [
+                    {
+                        "ingrediente": "Choclo Desgranado (100g)",
+                        "cantidad": 4
+                    },
+                    {
+                        "ingrediente": "Pino de Carne (100g)",
+                        "cantidad": 2
+                    },
+                    {
+                        "ingrediente": "Pollo (Tuto)",
+                        "cantidad": 1
+                    },
+                    {
+                        "ingrediente": "Huevo Duro unidad",
+                        "cantidad": 1
+                    }
+                ],
+                "margen_ganancia": 1.95,
+                "disponible": true,
+                "nota": ""
+            }
+        ],
+        "estado": "cerrado",
+        "nota": "",
+        "fechaCreacion": "21/06/2026",
+        "boleta": {
+            "total": 8677,
+            "tipoPago": "tarjeta",
+            "propina": 450000,
+            "divisiones": []
+        }
+    },
+    {
+        "id": 9,
+        "cliente": "jesus rivera",
+        "mesa1": {
+            "numero": 1,
+            "capacidad": 2,
+            "ocupada": true
+        },
+        "mesa2": null,
+        "platos": [
+            {
+                "nombre": "Pastel de Choclo",
+                "receta": [
+                    {
+                        "ingrediente": "Choclo Desgranado (100g)",
+                        "cantidad": 4
+                    },
+                    {
+                        "ingrediente": "Pino de Carne (100g)",
+                        "cantidad": 2
+                    },
+                    {
+                        "ingrediente": "Pollo (Tuto)",
+                        "cantidad": 1
+                    },
+                    {
+                        "ingrediente": "Huevo Duro unidad",
+                        "cantidad": 1
+                    }
+                ],
+                "margen_ganancia": 1.95,
+                "disponible": true,
+                "nota": ""
+            }
+        ],
+        "estado": "cerrado",
+        "nota": "",
+        "fechaCreacion": "21/06/2026",
+        "boleta": {
+            "total": 8677,
+            "tipoPago": "tarjeta",
+            "propina": 200000,
+            "divisiones": [
+                {
+                    "monto": 104338,
+                    "tipoPago": "tarjeta"
+                },
+                {
+                    "monto": 104338,
+                    "tipoPago": "tarjeta"
+                }
+            ]
+        }
+    },
+    {
+        "id": 10,
+        "cliente": "jesus rivera",
+        "mesa1": {
+            "numero": 1,
+            "capacidad": 2,
+            "ocupada": true
+        },
+        "mesa2": null,
+        "platos": [
+            {
+                "nombre": "Empanada de Pino",
+                "receta": [
+                    {
+                        "ingrediente": "Masa de Empanada",
+                        "cantidad": 1
+                    },
+                    {
+                        "ingrediente": "Pino de Carne (100g)",
+                        "cantidad": 1
+                    },
+                    {
+                        "ingrediente": "Huevo Duro unidad",
+                        "cantidad": 1
+                    }
+                ],
+                "margen_ganancia": 1.8,
+                "disponible": true,
+                "nota": ""
+            }
+        ],
+        "estado": "cerrado",
+        "nota": "",
+        "fechaCreacion": "21/06/2026",
+        "boleta": {
+            "total": 2610,
+            "tipoPago": "tarjeta",
+            "propina": 4500000,
+            "divisiones": []
+        }
+    },
+    {
+        "id": 11,
+        "cliente": "Jesus rivera",
+        "mesa1": {
+            "numero": 1,
+            "capacidad": 2,
+            "ocupada": true
+        },
+        "mesa2": null,
+        "platos": [
+            {
+                "nombre": "Pastel de Choclo",
+                "receta": [
+                    {
+                        "ingrediente": "Choclo Desgranado (100g)",
+                        "cantidad": 4
+                    },
+                    {
+                        "ingrediente": "Pino de Carne (100g)",
+                        "cantidad": 2
+                    },
+                    {
+                        "ingrediente": "Pollo (Tuto)",
+                        "cantidad": 1
+                    },
+                    {
+                        "ingrediente": "Huevo Duro unidad",
+                        "cantidad": 1
+                    }
+                ],
+                "margen_ganancia": 1.95,
+                "disponible": true,
+                "nota": ""
+            }
+        ],
+        "estado": "cerrado",
+        "nota": "",
+        "fechaCreacion": "21/06/2026",
+        "boleta": {
+            "total": 8677,
+            "tipoPago": "tarjeta",
+            "propina": 2000000,
+            "divisiones": []
+        }
+    },
+    {
+        "id": 12,
+        "cliente": "jesus rvivera",
+        "mesa1": {
+            "numero": 1,
+            "capacidad": 2,
+            "ocupada": true
+        },
+        "mesa2": null,
+        "platos": [
+            {
+                "nombre": "Jugo Natural de Frutilla (500ml)",
+                "receta": [
+                    {
+                        "ingrediente": "Insumo Jugo Frutilla",
+                        "cantidad": 1
+                    }
+                ],
+                "margen_ganancia": 3.11,
+                "disponible": true,
+                "nota": ""
+            }
+        ],
+        "estado": "cerrado",
+        "nota": "Sin azucar",
+        "fechaCreacion": "21/06/2026",
+        "boleta": {
+            "total": 2799,
+            "tipoPago": "tarjeta",
+            "propina": 450000,
+            "divisiones": [
+                {
+                    "monto": 226399,
+                    "tipoPago": "tarjeta"
+                },
+                {
+                    "monto": 226399,
+                    "tipoPago": "tarjeta"
+                }
+            ]
+        }
+    },
+    {
+        "id": 13,
+        "cliente": "jesus rivera",
+        "mesa1": {
+            "numero": 1,
+            "capacidad": 2,
+            "ocupada": true
+        },
+        "mesa2": {
+            "numero": 2,
+            "capacidad": 4,
+            "ocupada": true
+        },
+        "platos": [
+            {
+                "nombre": "Pastel de Choclo",
+                "receta": [
+                    {
+                        "ingrediente": "Choclo Desgranado (100g)",
+                        "cantidad": 4
+                    },
+                    {
+                        "ingrediente": "Pino de Carne (100g)",
+                        "cantidad": 2
+                    },
+                    {
+                        "ingrediente": "Pollo (Tuto)",
+                        "cantidad": 1
+                    },
+                    {
+                        "ingrediente": "Huevo Duro unidad",
+                        "cantidad": 1
+                    }
+                ],
+                "margen_ganancia": 1.95,
+                "disponible": true,
+                "nota": ""
+            }
+        ],
+        "estado": "cerrado",
+        "nota": "",
+        "fechaCreacion": "21/06/2026",
+        "boleta": {
+            "total": 8677,
+            "tipoPago": "tarjeta",
+            "propina": -1,
+            "divisiones": [
+                {
+                    "monto": 2892,
+                    "tipoPago": "tarjeta"
+                },
+                {
+                    "monto": 2892,
+                    "tipoPago": "tarjeta"
+                },
+                {
+                    "monto": 2892,
+                    "tipoPago": "tarjeta"
+                }
+            ]
+        }
+    },
+    {
+        "id": 14,
+        "cliente": "jesus rivera",
+        "mesa1": {
+            "numero": 1,
+            "capacidad": 2,
+            "ocupada": true
+        },
+        "mesa2": null,
+        "platos": [
+            {
+                "nombre": "Pastel de Choclo",
+                "receta": [
+                    {
+                        "ingrediente": "Choclo Desgranado (100g)",
+                        "cantidad": 4
+                    },
+                    {
+                        "ingrediente": "Pino de Carne (100g)",
+                        "cantidad": 2
+                    },
+                    {
+                        "ingrediente": "Pollo (Tuto)",
+                        "cantidad": 1
+                    },
+                    {
+                        "ingrediente": "Huevo Duro unidad",
+                        "cantidad": 1
+                    }
+                ],
+                "margen_ganancia": 1.95,
+                "disponible": true,
+                "nota": ""
+            }
+        ],
+        "estado": "cerrado",
+        "nota": "",
+        "fechaCreacion": "21/06/2026",
+        "boleta": {
+            "total": 8677,
+            "tipoPago": "efectivo",
+            "propina": 4500000,
+            "divisiones": []
+        }
+    },
+    {
+        "id": 15,
+        "cliente": "Jesus rivera",
+        "mesa1": {
+            "numero": 1,
+            "capacidad": 2,
+            "ocupada": true
+        },
+        "mesa2": null,
+        "platos": [
+            {
+                "nombre": "Pastel de Choclo",
+                "receta": [
+                    {
+                        "ingrediente": "Choclo Desgranado (100g)",
+                        "cantidad": 4
+                    },
+                    {
+                        "ingrediente": "Pino de Carne (100g)",
+                        "cantidad": 2
+                    },
+                    {
+                        "ingrediente": "Pollo (Tuto)",
+                        "cantidad": 1
+                    },
+                    {
+                        "ingrediente": "Huevo Duro unidad",
+                        "cantidad": 1
+                    }
+                ],
+                "margen_ganancia": 1.95,
+                "disponible": true,
+                "nota": ""
+            }
+        ],
+        "estado": "cerrado",
+        "nota": "",
+        "fechaCreacion": "21/06/2026",
+        "boleta": {
+            "total": 8677,
+            "tipoPago": "tarjeta",
+            "propina": 450000,
+            "divisiones": [
+                {
+                    "monto": 229338,
+                    "tipoPago": "tarjeta"
+                },
+                {
+                    "monto": 229338,
+                    "tipoPago": "tarjeta"
+                }
+            ]
+        }
+    },
+    {
+        "id": 16,
+        "cliente": "jesus rivera",
+        "mesa1": {
+            "numero": 2,
+            "capacidad": 4,
+            "ocupada": true
+        },
+        "mesa2": null,
+        "platos": [
+            {
+                "nombre": "Pastel de Choclo",
+                "receta": [
+                    {
+                        "ingrediente": "Choclo Desgranado (100g)",
+                        "cantidad": 4
+                    },
+                    {
+                        "ingrediente": "Pino de Carne (100g)",
+                        "cantidad": 2
+                    },
+                    {
+                        "ingrediente": "Pollo (Tuto)",
+                        "cantidad": 1
+                    },
+                    {
+                        "ingrediente": "Huevo Duro unidad",
+                        "cantidad": 1
+                    }
+                ],
+                "margen_ganancia": 1.95,
+                "disponible": true,
+                "nota": ""
+            }
+        ],
+        "estado": "cerrado",
+        "nota": "",
+        "fechaCreacion": "21/06/2026",
+        "boleta": {
+            "total": 8677,
+            "tipoPago": "tarjeta",
+            "propina": 450000,
+            "divisiones": [
+                {
+                    "monto": 229338,
+                    "tipoPago": "tarjeta"
+                },
+                {
+                    "monto": 229338,
+                    "tipoPago": "tarjeta"
+                }
+            ]
+        }
+    },
+    {
+        "id": 17,
+        "cliente": "jesus rivera",
+        "mesa1": {
+            "numero": 1,
+            "capacidad": 2,
+            "ocupada": true
+        },
+        "mesa2": null,
+        "platos": [
+            {
+                "nombre": "Pastel de Choclo",
+                "receta": [
+                    {
+                        "ingrediente": "Choclo Desgranado (100g)",
+                        "cantidad": 4
+                    },
+                    {
+                        "ingrediente": "Pino de Carne (100g)",
+                        "cantidad": 2
+                    },
+                    {
+                        "ingrediente": "Pollo (Tuto)",
+                        "cantidad": 1
+                    },
+                    {
+                        "ingrediente": "Huevo Duro unidad",
+                        "cantidad": 1
+                    }
+                ],
+                "margen_ganancia": 1.95,
+                "disponible": true,
+                "nota": ""
+            }
+        ],
+        "estado": "cerrado",
+        "nota": "",
+        "fechaCreacion": "21/06/2026",
+        "boleta": {
+            "total": 8677,
+            "tipoPago": "transferencia",
+            "propina": 250000,
+            "divisiones": [
+                {
+                    "monto": 129338,
+                    "tipoPago": "transferencia"
+                },
+                {
+                    "monto": 129338,
+                    "tipoPago": "transferencia"
+                }
+            ]
+        }
+    },
+    {
+        "id": 18,
+        "cliente": "jesus rivera",
+        "mesa1": {
+            "numero": 1,
+            "capacidad": 2,
+            "ocupada": true
+        },
+        "mesa2": null,
+        "platos": [],
+        "estado": "cancelado",
+        "nota": "",
+        "fechaCreacion": "21/06/2026",
+        "boleta": null
+    },
+    {
+        "id": 19,
+        "cliente": "jesus rivera",
+        "mesa1": {
+            "numero": 1,
+            "capacidad": 2,
+            "ocupada": true
+        },
+        "mesa2": null,
+        "platos": [],
+        "estado": "cancelado",
+        "nota": "",
+        "fechaCreacion": "21/06/2026",
+        "boleta": null
+    },
+    {
+        "id": 20,
+        "cliente": "jesus rivera",
+        "mesa1": {
+            "numero": 2,
+            "capacidad": 4,
+            "ocupada": true
+        },
+        "mesa2": null,
+        "platos": [
+            {
+                "nombre": "Pastel de Choclo",
+                "receta": [
+                    {
+                        "ingrediente": "Choclo Desgranado (100g)",
+                        "cantidad": 4
+                    },
+                    {
+                        "ingrediente": "Pino de Carne (100g)",
+                        "cantidad": 2
+                    },
+                    {
+                        "ingrediente": "Pollo (Tuto)",
+                        "cantidad": 1
+                    },
+                    {
+                        "ingrediente": "Huevo Duro unidad",
+                        "cantidad": 1
+                    }
+                ],
+                "margen_ganancia": 1.95,
+                "disponible": true,
+                "nota": ""
+            }
+        ],
+        "estado": "cerrado",
+        "nota": "",
+        "fechaCreacion": "21/06/2026",
+        "boleta": {
+            "total": 8677,
+            "tipoPago": "tarjeta",
+            "propina": 600000,
+            "divisiones": [
+                {
+                    "monto": 152169,
+                    "tipoPago": "tarjeta"
+                },
+                {
+                    "monto": 152169,
+                    "tipoPago": "tarjeta"
+                },
+                {
+                    "monto": 152169,
+                    "tipoPago": "tarjeta"
+                },
+                {
+                    "monto": 152169,
+                    "tipoPago": "tarjeta"
+                }
+            ]
+        }
+    }
+]

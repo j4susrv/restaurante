@@ -1,0 +1,117 @@
+[
+    {
+        "nombre": "Pastel de Choclo",
+        "receta": [
+            {"ingrediente": "Choclo Desgranado (100g)", "cantidad": 4},
+            {"ingrediente": "Pino de Carne (100g)", "cantidad": 2},
+            {"ingrediente": "Pollo (Tuto)", "cantidad": 1},
+            {"ingrediente": "Huevo Duro unidad", "cantidad": 1}
+        ],
+        "margen_ganancia": 1.95,
+        "disponible": true,
+        "nota": ""
+    },
+    {
+        "nombre": "Empanada de Pino",
+        "receta": [
+            {"ingrediente": "Masa de Empanada", "cantidad": 1},
+            {"ingrediente": "Pino de Carne (100g)", "cantidad": 1},
+            {"ingrediente": "Huevo Duro unidad", "cantidad": 1}
+        ],
+        "margen_ganancia": 1.80,
+        "disponible": true,
+        "nota": ""
+    },
+    {
+        "nombre": "Cazuela de Vacuno",
+        "receta": [
+            {"ingrediente": "Lomo de Vacuno (100g)", "cantidad": 1},
+            {"ingrediente": "Papa unidad", "cantidad": 1},
+            {"ingrediente": "Zapallo (Trozo)", "cantidad": 1},
+            {"ingrediente": "Cebolla picada (100g)", "cantidad": 1}
+        ],
+        "margen_ganancia": 2.15,
+        "disponible": true,
+        "nota": ""
+    },
+    {
+        "nombre": "Chorrillana",
+        "receta": [
+            {"ingrediente": "Papas Fritas (Porción 100g)", "cantidad": 4},
+            {"ingrediente": "Lomo de Vacuno (100g)", "cantidad": 3},
+            {"ingrediente": "Cebolla picada (100g)", "cantidad": 2},
+            {"ingrediente": "Huevo Duro unidad", "cantidad": 2}
+        ],
+        "margen_ganancia": 1.56,
+        "disponible": true,
+        "nota": ""
+    },
+    {
+        "nombre": "Completo Italiano",
+        "receta": [
+            {"ingrediente": "Pan de Completo", "cantidad": 1},
+            {"ingrediente": "Salchicha unidad", "cantidad": 1},
+            {"ingrediente": "Tomate", "cantidad": 1},
+            {"ingrediente": "Palta Molida (50g)", "cantidad": 1},
+            {"ingrediente": "Mayonesa (Porción)", "cantidad": 1}
+        ],
+        "margen_ganancia": 1.70,
+        "disponible": true,
+        "nota": ""
+    },
+    {
+        "nombre": "Mote con Huesillo",
+        "receta": [
+            {"ingrediente": "Mote cocido (100g)", "cantidad": 2},
+            {"ingrediente": "Huesillo unidad", "cantidad": 2}
+        ],
+        "margen_ganancia": 2.08,
+        "disponible": true,
+        "nota": ""
+    },
+    {
+        "nombre": "Jugo Natural de Frutilla (500ml)",
+        "receta": [
+            {"ingrediente": "Insumo Jugo Frutilla", "cantidad": 1}
+        ],
+        "margen_ganancia": 3.11,
+        "disponible": true,
+        "nota": ""
+    },
+    {
+        "nombre": "Jugo Natural de Frambuesa (500ml)",
+        "receta": [
+            {"ingrediente": "Insumo Jugo Frambuesa", "cantidad": 1}
+        ],
+        "margen_ganancia": 3.11,
+        "disponible": true,
+        "nota": ""
+    },
+    {
+        "nombre": "Jugo Natural de Mango (500ml)",
+        "receta": [
+            {"ingrediente": "Insumo Jugo Mango", "cantidad": 1}
+        ],
+        "margen_ganancia": 3.33,
+        "disponible": true,
+        "nota": ""
+    },
+    {
+        "nombre": "Coca-Cola Original (350cc)",
+        "receta": [
+            {"ingrediente": "Lata Coca-Cola 350cc", "cantidad": 1}
+        ],
+        "margen_ganancia": 2.25,
+        "disponible": true,
+        "nota": ""
+    },
+    {
+        "nombre": "Pepsi Zero (350cc)",
+        "receta": [
+            {"ingrediente": "Lata Pepsi Zero 350cc", "cantidad": 1}
+        ],
+        "margen_ganancia": 2.25,
+        "disponible": true,
+        "nota": ""
+    }
+]

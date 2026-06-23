@@ -1,0 +1,8 @@
+[21/06/2026 21:37:04] Ajuste: Choclo Desgranado (100g) -> 50
+[21/06/2026 21:37:13] Ajuste: Choclo Desgranado (100g) -> 50
+[21/06/2026 21:37:21] Ajuste: Choclo Desgranado (100g) -> 10
+[21/06/2026 21:41:34] Ajuste: Pino de Carne (100g) -> 40
+[21/06/2026 21:42:41] Ajuste: Choclo Desgranado (100g) -> 40
+[21/06/2026 21:42:52] Ajuste: Pino de Carne (100g) -> 100
+[21/06/2026 21:43:05] Ajuste: Pino de Carne (100g) -> 50
+[21/06/2026 21:43:16] Ajuste: Lomo de Vacuno (100g) -> 50
