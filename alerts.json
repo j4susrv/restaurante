@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "tipo": "mesa_ocupada",
+        "mensaje": "Atención: La mesa 2 lleva 1d 17h 5m ocupada. Verificar si debe cerrarse.",
+        "referencia": "2",
+        "created_at": "2026-06-23T17:05:39.512042",
+        "estado": "activo"
+    },
+    {
+        "id": 2,
+        "tipo": "stock_bajo",
+        "mensaje": "Stock bajo: Lata Pepsi Zero 350cc. Quedan 5 u.",
+        "referencia": "Lata Pepsi Zero 350cc",
+        "created_at": "2026-06-23T17:06:36.779538",
+        "estado": "activo"
+    }
+]

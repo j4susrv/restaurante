@@ -6,3 +6,6 @@
 [21/06/2026 21:42:52] Ajuste: Pino de Carne (100g) -> 100
 [21/06/2026 21:43:05] Ajuste: Pino de Carne (100g) -> 50
 [21/06/2026 21:43:16] Ajuste: Lomo de Vacuno (100g) -> 50
+[23/06/2026 16:05:27] Ajuste: Pollo (Tuto) -> 4
+[23/06/2026 16:06:49] Ajuste: Pollo (Tuto) -> 20
+[23/06/2026 16:25:26] Ajuste: Lata Pepsi Zero 350cc -> 6

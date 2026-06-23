@@ -9,8 +9,9 @@ import math
 
 class InventarioManager(InventarioService):
 
-    def __init__(self, validador: ValidadorService):
+    def __init__(self, validador: ValidadorService, alert_service=None):
         self._validador = validador
+        self._alert_service = alert_service
 
     def actualizarStock(self, nombrePlato: str, cantidad: int):
         """
@@ -28,6 +29,9 @@ class InventarioManager(InventarioService):
             return
 
         ingredientes_sistema = cargarIngredientes()
+
+        # Mantener lista de ingredientes modificados para notificar alertas
+        modificados = []
 
         # Recorremos la receta del plato para descontar o devolver cada insumo
         for item in plato.receta:
@@ -52,9 +56,19 @@ class InventarioManager(InventarioService):
 
                 # 4. Resta o suma atómica entre enteros puros
                 ing.stock_unidades = max(0, stock_actual - descuento_total)
+                modificados.append(ing)
 
         # Guardamos los ingredientes actualizados en ingredientes.json como enteros
         guardarIngredientes(ingredientes_sistema)
+
+        # Notificar al servicio de alertas sobre cambios de stock (si existe)
+        if self._alert_service:
+            for ing in modificados:
+                try:
+                    self._alert_service.check_stock_for_ingredient(ing)
+                except Exception:
+                    # No romper la lógica de inventario por fallas en alertas
+                    pass
 
     def marcarNoDisponible(self, nombrePlato: str):
         """Desactiva temporalmente un plato de forma manual"""
@@ -78,5 +92,12 @@ class InventarioManager(InventarioService):
             
             # Guardamos los ingredientes actualizados
             guardarIngredientes(ingredientes_sistema)
+
+            # Notificar al servicio de alertas sobre el cambio
+            if self._alert_service:
+                try:
+                    self._alert_service.check_stock_for_ingredient(ing)
+                except Exception:
+                    pass
         else:
             raise Exception(f"Ingrediente '{nombreIngrediente}' no encontrado en el sistema.")

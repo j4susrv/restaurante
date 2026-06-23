@@ -32,7 +32,8 @@ class RestauranteGUI:
             self.tabla_pedidos,
             self.tabla_inventario,
             self.tabla_bebidas,
-            self.lista_detalles
+            self.lista_detalles,
+            getattr(self, 'tabla_notificaciones', None)
         )
 
         # Instanciamos los controladores de ventanas, pasando lo necesario
@@ -57,6 +58,12 @@ class RestauranteGUI:
         )
         self.actualizar_tablas()
 
+        # Programar refresco periódico de tablas (incluye notificaciones)
+        try:
+            self.root.after(30000, self.actualizar_tablas)
+        except Exception:
+            pass
+
     def _crear_interfaz_principal(self):
         # Contenedor Principal (Layout de Rejillas)
         main_frame = ttk.Frame(self.root, padding=15)
@@ -74,6 +81,7 @@ class RestauranteGUI:
         ttk.Button(acciones_frame, text="Cancelar Pedido", command=self.accion_cancelar_pedido).pack(side=tk.LEFT, padx=5)
         ttk.Button(acciones_frame, text="Ver Bodega", command=self.ventana_revisar_bodega).pack(side=tk.LEFT, padx=5)
         ttk.Button(acciones_frame, text="Admin Stock", command=self.abrir_admin_stock, style="Admin.TButton").pack(side=tk.LEFT, padx=5)
+        ttk.Button(acciones_frame, text="Borrar Aviso", command=self.borrar_aviso).pack(side=tk.LEFT, padx=5)
         # --- SECCIÓN CENTRAL: TABLAS DE MONITOREO EN VIVO ---
         paneles_frame = ttk.PanedWindow(main_frame, orient=tk.HORIZONTAL)
         paneles_frame.pack(fill=tk.BOTH, expand=True)
@@ -136,6 +144,20 @@ class RestauranteGUI:
         self.tabla_bebidas.column("precio", width=80, anchor=tk.E)
         self.tabla_bebidas.column("stock", width=60, anchor=tk.CENTER)
         self.tabla_bebidas.pack(fill=tk.BOTH, expand=True)
+
+        # Zona de Notificaciones / Avisos
+        notifs_lf = ttk.LabelFrame(derecho_frame, text=" Notificaciones / Avisos ", padding=5)
+        notifs_lf.pack(fill=tk.BOTH, expand=True, pady=(2, 0))
+        self.tabla_notificaciones = ttk.Treeview(notifs_lf, columns=("tipo","mensaje","fecha","estado"), show="headings", height=4)
+        self.tabla_notificaciones.heading("tipo", text="Tipo")
+        self.tabla_notificaciones.heading("mensaje", text="Mensaje")
+        self.tabla_notificaciones.heading("fecha", text="Fecha/Hora")
+        self.tabla_notificaciones.heading("estado", text="Estado")
+        self.tabla_notificaciones.column("tipo", width=100, anchor=tk.CENTER)
+        self.tabla_notificaciones.column("fecha", width=140, anchor=tk.CENTER)
+        self.tabla_notificaciones.column("estado", width=80, anchor=tk.CENTER)
+        self.tabla_notificaciones.pack(fill=tk.BOTH, expand=True)
+        self.tabla_notificaciones.bind("<Double-1>", self.mostrar_alerta_detalle)
 
     #Son los metodos fuente, que delegan todo a los controladores especializados
     def ventana_abrir_pedido(self):
@@ -202,3 +224,62 @@ class RestauranteGUI:
 
     def actualizar_tablas(self):
         self._vistas.actualizar_tablas()
+
+    def borrar_aviso(self):
+        # Borra las alertas seleccionadas en la tabla de notificaciones (sin confirmación)
+        seleccion = ()
+        try:
+            seleccion = self.tabla_notificaciones.selection()
+        except Exception:
+            seleccion = ()
+        if not seleccion:
+            messagebox.showwarning("Seleccionar aviso", "Seleccione al menos un aviso para borrar.")
+            return
+        for iid in seleccion:
+            try:
+                alert_id = int(iid)
+                if hasattr(self.sistema, 'alertService'):
+                    self.sistema.alertService.delete_alert(alert_id)
+            except Exception:
+                pass
+        # refrescar vistas
+        self.actualizar_tablas()
+
+    def mostrar_alerta_detalle(self, event):
+        # Muestra el mensaje completo de la alerta seleccionada en un diálogo
+        sel = ()
+        try:
+            sel = self.tabla_notificaciones.selection()
+        except Exception:
+            sel = ()
+        if not sel:
+            return
+        iid = sel[0]
+        try:
+            alert_id = int(iid)
+            alerts = self.sistema.alertService.list_alerts() if hasattr(self.sistema, 'alertService') else []
+            alert = next((a for a in alerts if a.get('id')==alert_id), None)
+            if alert:
+                messagebox.showinfo("Detalle de Aviso", alert.get('mensaje',''))
+        except Exception:
+            pass
+
+    def resolver_aviso(self):
+        # Resuelve las alertas seleccionadas en la tabla de notificaciones
+        seleccion = ()
+        try:
+            seleccion = self.tabla_notificaciones.selection()
+        except Exception:
+            seleccion = ()
+        if not seleccion:
+            messagebox.showwarning("Seleccionar aviso", "Seleccione al menos un aviso para resolver.")
+            return
+        for iid in seleccion:
+            try:
+                alert_id = int(iid)
+                if hasattr(self.sistema, 'alertService'):
+                    self.sistema.alertService.delete_alert(alert_id)
+            except Exception:
+                pass
+        # refrescar vistas
+        self.actualizar_tablas()

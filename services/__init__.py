@@ -5,3 +5,4 @@ from .factura_service import FacturaService
 from .inventario_service import InventarioService
 from .division_service import DivisionService
 from .menu_service import MenuService
+from .alert_service import AlertService

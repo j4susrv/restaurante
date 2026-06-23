@@ -2,133 +2,155 @@
     {
         "nombre": "Choclo Desgranado (100g)",
         "precio_unidad": 350,
-        "stock_unidades": 24,
-        "subcategoria": "Verduras"
+        "stock_unidades": 20,
+        "subcategoria": "Verduras",
+        "min_stock": 5
     },
     {
         "nombre": "Pino de Carne (100g)",
         "precio_unidad": 800,
-        "stock_unidades": 42,
-        "subcategoria": "Carnes"
+        "stock_unidades": 40,
+        "subcategoria": "Carnes",
+        "min_stock": 5
     },
     {
         "nombre": "Pollo (Tuto)",
         "precio_unidad": 1200,
-        "stock_unidades": 27,
-        "subcategoria": "Carnes"
+        "stock_unidades": 20,
+        "subcategoria": "Carnes",
+        "min_stock": 5
     },
     {
         "nombre": "Masa de Empanada",
         "precio_unidad": 400,
         "stock_unidades": 96,
-        "subcategoria": "Abarrotes"
+        "subcategoria": "Abarrotes",
+        "min_stock": 5
     },
     {
         "nombre": "Lomo de Vacuno (100g)",
         "precio_unidad": 1400,
         "stock_unidades": 50,
-        "subcategoria": "Carnes"
+        "subcategoria": "Carnes",
+        "min_stock": 5
     },
     {
         "nombre": "Papa unidad",
         "precio_unidad": 200,
         "stock_unidades": 200,
-        "subcategoria": "Verduras"
+        "subcategoria": "Verduras",
+        "min_stock": 5
     },
     {
         "nombre": "Zapallo (Trozo)",
         "precio_unidad": 300,
         "stock_unidades": 50,
-        "subcategoria": "Verduras"
+        "subcategoria": "Verduras",
+        "min_stock": 5
     },
     {
         "nombre": "Tomate",
         "precio_unidad": 400,
         "stock_unidades": 95,
-        "subcategoria": "Verduras"
+        "subcategoria": "Verduras",
+        "min_stock": 5
     },
     {
         "nombre": "Cebolla picada (100g)",
         "precio_unidad": 150,
         "stock_unidades": 96,
-        "subcategoria": "Verduras"
+        "subcategoria": "Verduras",
+        "min_stock": 5
     },
     {
         "nombre": "Huevo Duro unidad",
         "precio_unidad": 250,
-        "stock_unidades": 69,
-        "subcategoria": "Abarrotes"
+        "stock_unidades": 68,
+        "subcategoria": "Abarrotes",
+        "min_stock": 5
     },
     {
         "nombre": "Papas Fritas (Porción 100g)",
         "precio_unidad": 500,
         "stock_unidades": 32,
-        "subcategoria": "Abarrotes"
+        "subcategoria": "Abarrotes",
+        "min_stock": 5
     },
     {
         "nombre": "Pan de Completo",
         "precio_unidad": 300,
         "stock_unidades": 95,
-        "subcategoria": "Abarrotes"
+        "subcategoria": "Abarrotes",
+        "min_stock": 5
     },
     {
         "nombre": "Salchicha unidad",
         "precio_unidad": 350,
         "stock_unidades": 95,
-        "subcategoria": "Carnes"
+        "subcategoria": "Carnes",
+        "min_stock": 5
     },
     {
         "nombre": "Palta Molida (50g)",
         "precio_unidad": 600,
         "stock_unidades": 115,
-        "subcategoria": "Verduras"
+        "subcategoria": "Verduras",
+        "min_stock": 5
     },
     {
         "nombre": "Mayonesa (Porción)",
         "precio_unidad": 150,
         "stock_unidades": 145,
-        "subcategoria": "Abarrotes"
+        "subcategoria": "Abarrotes",
+        "min_stock": 5
     },
     {
         "nombre": "Mote cocido (100g)",
         "precio_unidad": 200,
         "stock_unidades": 76,
-        "subcategoria": "Abarrotes"
+        "subcategoria": "Abarrotes",
+        "min_stock": 5
     },
     {
         "nombre": "Huesillo unidad",
         "precio_unidad": 400,
         "stock_unidades": 56,
-        "subcategoria": "Abarrotes"
+        "subcategoria": "Abarrotes",
+        "min_stock": 5
     },
     {
         "nombre": "Insumo Jugo Mango",
         "precio_unidad": 900,
         "stock_unidades": 50,
-        "subcategoria": "Líquidos"
+        "subcategoria": "Líquidos",
+        "min_stock": 5
     },
     {
         "nombre": "Insumo Jugo Frambuesa",
         "precio_unidad": 900,
         "stock_unidades": 56,
-        "subcategoria": "Líquidos"
+        "subcategoria": "Líquidos",
+        "min_stock": 5
     },
     {
         "nombre": "Insumo Jugo Frutilla",
         "precio_unidad": 900,
         "stock_unidades": 44,
-        "subcategoria": "Líquidos"
+        "subcategoria": "Líquidos",
+        "min_stock": 5
     },
     {
         "nombre": "Lata Coca-Cola 350cc",
         "precio_unidad": 800,
         "stock_unidades": 60,
-        "subcategoria": "Líquidos"
+        "subcategoria": "Líquidos",
+        "min_stock": 5
     },
     {
         "nombre": "Lata Pepsi Zero 350cc",
         "precio_unidad": 800,
-        "stock_unidades": 58,
-        "subcategoria": "Líquidos"
+        "stock_unidades": 5,
+        "subcategoria": "Líquidos",
+        "min_stock": 5
     }
 ]

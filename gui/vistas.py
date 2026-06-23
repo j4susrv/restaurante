@@ -5,6 +5,7 @@ de las vistas (tablas Treeview y Listbox de detalles) en la ventana principal.
 """
 import tkinter as tk
 import repositorio
+from datetime import datetime
 from utils_format import formato_moneda
 
 PALABRAS_BEBIDA = ["cocacola", "pepsi", "monster", "té", "cafe", "café", "bebida", "fanta", "sprite", "jugo", "ml", "cc"]
@@ -12,12 +13,13 @@ PALABRAS_BEBIDA = ["cocacola", "pepsi", "monster", "té", "cafe", "café", "bebi
 class VistasPrincipales:
     """Gestiona la actualización y renderizado de los datos en las tablas de la ventana principal."""
 
-    def __init__(self, sistema, tabla_pedidos, tabla_inventario, tabla_bebidas, lista_detalles):
+    def __init__(self, sistema, tabla_pedidos, tabla_inventario, tabla_bebidas, lista_detalles, tabla_notificaciones=None):
         self.sistema = sistema
         self.tabla_pedidos = tabla_pedidos
         self.tabla_inventario = tabla_inventario
         self.tabla_bebidas = tabla_bebidas
         self.lista_detalles = lista_detalles
+        self.tabla_notificaciones = tabla_notificaciones
 
     def actualizar_tablas(self):
         """
@@ -52,6 +54,31 @@ class VistasPrincipales:
             else:
                 self.tabla_inventario.insert("", tk.END, values=(pl.nombre, f"${formato_moneda(pl.precio)}", f"{pl.stock} u."))
 
+        # 4. Actualizar notificaciones si existe tabla para ello
+        if self.tabla_notificaciones and hasattr(self.sistema, 'alertService'):
+            for item in self.tabla_notificaciones.get_children():
+                self.tabla_notificaciones.delete(item)
+            try:
+                alerts = self.sistema.alertService.list_alerts()
+                # ordenar por estado y fecha
+                alerts_sorted = sorted(alerts, key=lambda a: (a.get('estado',''), a.get('created_at','')))
+                for a in alerts_sorted:
+                    tipo = a.get('tipo')
+                    msg = a.get('mensaje')
+                    fecha = a.get('created_at')
+                    estado = a.get('estado')
+                    iid = str(a.get('id', ''))
+                    # Formateamos fecha legible y acortamos mensaje para caber en la columna
+                    try:
+                        dt = datetime.fromisoformat(fecha) if fecha else None
+                        fecha_display = dt.strftime("%d/%m/%Y %H:%M") if dt else ''
+                    except Exception:
+                        fecha_display = fecha or ''
+                    full_msg = msg or ''
+                    display_msg = full_msg if len(full_msg) <= 60 else full_msg[:57] + '...'
+                    self.tabla_notificaciones.insert("", tk.END, iid=iid, values=(tipo, display_msg, fecha_display, estado))
+            except Exception:
+                pass
     def refrescar_listbox_detalle(self, pedido_id):
         """Limpia y muestra el detalle de un pedido específico."""
         self.lista_detalles.delete(0, tk.END)
