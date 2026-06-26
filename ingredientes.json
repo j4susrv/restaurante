@@ -2,7 +2,7 @@
     {
         "nombre": "Choclo Desgranado (100g)",
         "precio_unidad": 350,
-        "stock_unidades": 0,
+        "stock_unidades": 7,
         "subcategoria": "Verduras",
         "min_stock": 5
     },
@@ -149,7 +149,7 @@
     {
         "nombre": "Lata Pepsi Zero 350cc",
         "precio_unidad": 800,
-        "stock_unidades": 5,
+        "stock_unidades": 6,
         "subcategoria": "Líquidos",
         "min_stock": 5
     }

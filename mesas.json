@@ -2,14 +2,14 @@
     {
         "numero": 1,
         "capacidad": 2,
-        "ocupada": true,
-        "ocupada_desde": "2026-06-23T16:05:49.169438"
+        "ocupada": false,
+        "ocupada_desde": null
     },
     {
         "numero": 2,
         "capacidad": 4,
-        "ocupada": true,
-        "ocupada_desde": "2026-06-23T16:58:20.960280"
+        "ocupada": false,
+        "ocupada_desde": null
     },
     {
         "numero": 3,

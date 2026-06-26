@@ -65,8 +65,31 @@ class RestauranteGUI:
             pass
 
     def _crear_interfaz_principal(self):
-        # Contenedor Principal (Layout de Rejillas)
-        main_frame = ttk.Frame(self.root, padding=15)
+        # Contenedor con scroll vertical para toda la interfaz
+        container = ttk.Frame(self.root)
+        container.pack(fill=tk.BOTH, expand=True)
+
+        self.canvas = tk.Canvas(container, highlightthickness=0)
+        self.canvas.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
+
+        scrollbar = ttk.Scrollbar(container, orient=tk.VERTICAL, command=self.canvas.yview)
+        scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
+        self.canvas.configure(yscrollcommand=scrollbar.set)
+
+        self.scrollable_frame = ttk.Frame(self.canvas)
+        self._canvas_window = self.canvas.create_window((0, 0), window=self.scrollable_frame, anchor="nw")
+
+        self.scrollable_frame.bind(
+            "<Configure>",
+            lambda event: self.canvas.configure(scrollregion=self.canvas.bbox("all"))
+        )
+        self.canvas.bind(
+            "<Configure>",
+            lambda event: self.canvas.itemconfig(self._canvas_window, width=event.width)
+        )
+
+        # Contenedor principal dentro del canvas scrollable
+        main_frame = ttk.Frame(self.scrollable_frame, padding=15)
         main_frame.pack(fill=tk.BOTH, expand=True)
 
         # --- SECCIÓN SUPERIOR: BOTONES DE ACCIÓN MÓDULO ---
