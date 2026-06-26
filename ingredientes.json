@@ -2,21 +2,21 @@
     {
         "nombre": "Choclo Desgranado (100g)",
         "precio_unidad": 350,
-        "stock_unidades": 20,
+        "stock_unidades": 0,
         "subcategoria": "Verduras",
         "min_stock": 5
     },
     {
         "nombre": "Pino de Carne (100g)",
         "precio_unidad": 800,
-        "stock_unidades": 40,
+        "stock_unidades": 30,
         "subcategoria": "Carnes",
         "min_stock": 5
     },
     {
         "nombre": "Pollo (Tuto)",
         "precio_unidad": 1200,
-        "stock_unidades": 20,
+        "stock_unidades": 15,
         "subcategoria": "Carnes",
         "min_stock": 5
     },
@@ -65,7 +65,7 @@
     {
         "nombre": "Huevo Duro unidad",
         "precio_unidad": 250,
-        "stock_unidades": 68,
+        "stock_unidades": 63,
         "subcategoria": "Abarrotes",
         "min_stock": 5
     },

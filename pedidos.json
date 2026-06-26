@@ -21,6 +21,126 @@
                 "margen_ganancia": 2.25,
                 "disponible": true,
                 "nota": ""
+            },
+            {
+                "nombre": "Pastel de Choclo",
+                "receta": [
+                    {
+                        "ingrediente": "Choclo Desgranado (100g)",
+                        "cantidad": 4
+                    },
+                    {
+                        "ingrediente": "Pino de Carne (100g)",
+                        "cantidad": 2
+                    },
+                    {
+                        "ingrediente": "Pollo (Tuto)",
+                        "cantidad": 1
+                    },
+                    {
+                        "ingrediente": "Huevo Duro unidad",
+                        "cantidad": 1
+                    }
+                ],
+                "margen_ganancia": 1.95,
+                "disponible": true,
+                "nota": ""
+            },
+            {
+                "nombre": "Pastel de Choclo",
+                "receta": [
+                    {
+                        "ingrediente": "Choclo Desgranado (100g)",
+                        "cantidad": 4
+                    },
+                    {
+                        "ingrediente": "Pino de Carne (100g)",
+                        "cantidad": 2
+                    },
+                    {
+                        "ingrediente": "Pollo (Tuto)",
+                        "cantidad": 1
+                    },
+                    {
+                        "ingrediente": "Huevo Duro unidad",
+                        "cantidad": 1
+                    }
+                ],
+                "margen_ganancia": 1.95,
+                "disponible": true,
+                "nota": ""
+            },
+            {
+                "nombre": "Pastel de Choclo",
+                "receta": [
+                    {
+                        "ingrediente": "Choclo Desgranado (100g)",
+                        "cantidad": 4
+                    },
+                    {
+                        "ingrediente": "Pino de Carne (100g)",
+                        "cantidad": 2
+                    },
+                    {
+                        "ingrediente": "Pollo (Tuto)",
+                        "cantidad": 1
+                    },
+                    {
+                        "ingrediente": "Huevo Duro unidad",
+                        "cantidad": 1
+                    }
+                ],
+                "margen_ganancia": 1.95,
+                "disponible": true,
+                "nota": ""
+            },
+            {
+                "nombre": "Pastel de Choclo",
+                "receta": [
+                    {
+                        "ingrediente": "Choclo Desgranado (100g)",
+                        "cantidad": 4
+                    },
+                    {
+                        "ingrediente": "Pino de Carne (100g)",
+                        "cantidad": 2
+                    },
+                    {
+                        "ingrediente": "Pollo (Tuto)",
+                        "cantidad": 1
+                    },
+                    {
+                        "ingrediente": "Huevo Duro unidad",
+                        "cantidad": 1
+                    }
+                ],
+                "margen_ganancia": 1.95,
+                "disponible": true,
+                "nota": ""
+            },
+            {
+                "nombre": "Pastel de Choclo",
+                "receta": [
+                    {
+                        "ingrediente": "Choclo Desgranado (100g)",
+                        "cantidad": 4
+                    },
+                    {
+                        "ingrediente": "Pino de Carne (100g)",
+                        "cantidad": 2
+                    },
+                    {
+                        "ingrediente": "Pollo (Tuto)",
+                        "cantidad": 1
+                    },
+                    {
+                        "ingrediente": "Huevo Duro unidad",
+                        "cantidad": 1
+                    }
+                ],
+                "margen_ganancia": 1.95,
+                "disponible": true,
+                "nota": ""
             }
         ],
         "estado": "abierto",

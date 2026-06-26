@@ -156,7 +156,12 @@ class RestauranteGUI:
         self.tabla_notificaciones.column("tipo", width=100, anchor=tk.CENTER)
         self.tabla_notificaciones.column("fecha", width=140, anchor=tk.CENTER)
         self.tabla_notificaciones.column("estado", width=80, anchor=tk.CENTER)
-        self.tabla_notificaciones.pack(fill=tk.BOTH, expand=True)
+        self.tabla_notificaciones.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
+
+        scroll_alert = ttk.Scrollbar(notifs_lf, orient=tk.VERTICAL, command=self.tabla_notificaciones.yview)
+        self.tabla_notificaciones.configure(yscrollcommand=scroll_alert.set)
+        scroll_alert.pack(side=tk.RIGHT, fill=tk.Y)
+
         self.tabla_notificaciones.bind("<Double-1>", self.mostrar_alerta_detalle)
 
     #Son los metodos fuente, que delegan todo a los controladores especializados

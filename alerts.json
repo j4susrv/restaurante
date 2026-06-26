@@ -2,17 +2,34 @@
     {
         "id": 1,
         "tipo": "mesa_ocupada",
-        "mensaje": "Atención: La mesa 2 lleva 1d 17h 5m ocupada. Verificar si debe cerrarse.",
-        "referencia": "2",
-        "created_at": "2026-06-23T17:05:39.512042",
+        "mensaje": "Atención: La mesa 1 lleva 2d 4h 26m ocupada. Verificar si debe cerrarse.",
+        "referencia": "1",
+        "created_at": "2026-06-25T20:32:43.179361",
         "estado": "activo"
     },
     {
         "id": 2,
+        "tipo": "mesa_ocupada",
+        "mensaje": "Atención: La mesa 2 lleva 3d 20h 32m ocupada. Verificar si debe cerrarse.",
+        "referencia": "2",
+        "created_at": "2026-06-25T20:32:43.180240",
+        "estado": "activo"
+    },
+    {
+        "id": 3,
         "tipo": "stock_bajo",
-        "mensaje": "Stock bajo: Lata Pepsi Zero 350cc. Quedan 5 u.",
-        "referencia": "Lata Pepsi Zero 350cc",
-        "created_at": "2026-06-23T17:06:36.779538",
+        "mensaje": "Stock bajo: Choclo Desgranado (100g). Quedan 4 u.",
+        "referencia": "Choclo Desgranado (100g)",
+        "created_at": "2026-06-25T20:33:10.329317",
+        "estado": "resuelto",
+        "resolved_at": "2026-06-25T20:33:13.216174"
+    },
+    {
+        "id": 4,
+        "tipo": "sin_stock",
+        "mensaje": "Sin stock: Choclo Desgranado (100g). No está disponible.",
+        "referencia": "Choclo Desgranado (100g)",
+        "created_at": "2026-06-25T20:33:13.214959",
         "estado": "activo"
     }
 ]
